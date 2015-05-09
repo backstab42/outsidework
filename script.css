@@ -1,0 +1,11 @@
+$(document).ready(function() { //waits until all elements on the page are loaded.
+    
+    	$('.nav').on('click', function() { //When the nav bar is clicked,
+
+
+			$('.menu').toggleClass('show-description'); //toggle the class show-description (find the class in css!)
+
+		}); 
+    
+    
+}); 
