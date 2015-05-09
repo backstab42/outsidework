@@ -1,0 +1,225 @@
+.nav .container li { /* this is very specific! It's telling the css to find li in a id called nav AND container. This means it only affects the li in the nav and container div! */
+    
+ display: inline; /* This makes the list display in the same line. */
+ padding: 20px; /* 20 px of space between words */
+ font-size: 20px;
+ /* max-width: 1200px; */
+ margin: 0 auto;
+ text-align: center;
+   
+}
+
+html, body { /* makes it so website cannot scroll left*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.nav {
+ 
+    padding-top: 25px; /* space between words and top of the website */
+    padding-bottom: 25px; /* space between words and bottom of the nav bar, and above jumbotron */
+    
+}
+
+
+
+p {
+    
+ text-align: justify; /* justify text*/
+    font-family:'Roboto', Muli, Helvetica, Arial, sans-serif;   
+    line-height: 2em; /*2x space */
+}
+
+.jumbotron {
+    
+ background: url("http://goo.gl/04j7Nn");   /*bg image */
+    background-repeat: no-repeat; /*makes it so the bg doesn't repeat/tile */
+background-size: cover;/*makes it so the bg doesn't repeat/tile */
+    height:500px; /* height of jumbotron */
+    
+    
+}
+
+.jumbotron .container  { /* container inside jumbotron (which is the text) */
+    
+    text-align: center; /* centers text */
+    top:100px; /* gives the h1 some space on the top */
+   /* max-width: 1028px; */ /* gives it a max width*/
+}
+
+.jumbotron .container h2 {
+ color:#F27852;   
+}
+
+
+.welcome {
+    
+ padding-top: 48px;   /* space between welcome text and image*/ 
+    
+}
+
+ h1 {
+    
+    
+    font-family:'Roboto', sans-serif, Muli, Helvetica, Arial, sans-serif;
+    color:#4be63d; /* cool green color*/
+    font-size: 40px; 
+}
+
+.welcome h2 {
+    
+    font-family: 'Roboto',Muli, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.5em; /* 1.5x space */
+    
+    
+}
+
+
+
+.features {
+    
+ margin-top: 96px;  /* space between welcome and features*/
+
+    
+}
+
+.nav a { /* nav bar links */
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+
+
+.pointshop2text { /*text */
+    
+    padding-top: 20px; /* space between img and text */
+    max-width: 300px;/* makes it so text is aligned with picture width */
+    
+    font-size: 15px;
+}
+
+.fastdl {
+    
+    
+    
+    font-size: 15px; 
+}
+
+.fafa { /* bars */
+    margin-left: -10px;
+    padding-bottom: 10px;
+    display: none;
+
+}
+
+
+
+/* Makes it mobile friendly! */
+    @media (max-width: 1000px) {
+
+          .nav .container li  {
+              
+              display: block;
+              padding-top: 0px;
+              padding-bottom: 5px;
+
+
+            
+          }
+            
+       .nav .container {
+
+
+        padding-left: 10px;
+        padding-right: 0px;
+        width: 95%;
+       }
+            
+            
+            
+
+
+  .menu {
+          display:none;
+              
+  } 
+
+
+
+  .show-description  {
+              
+    top:0px;
+    z-index: 9999; /* make it so navbar cannot be overlapped/comes first*/
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+
+    }  
+
+
+    .nav a {
+
+      font-size: 20px;
+       padding: .5em 0;
+    }
+
+             h1 {
+
+                font-size: 40px;
+                 
+                 text-align: center;
+                
+
+             }
+            
+            
+            .pointshop2text {
+                
+             margin-left: 25%;
+             margin-right: 25%;
+             max-width: 500px;
+                 /* margin-left: 100px; */
+                font-size: 20px;
+             /* max-width: 500px; */
+                
+            }
+           
+            img {
+               
+                /* margin-left: 150px; */
+                /* width: 400px; */
+                 margin-left: 25%;
+                 width: 50%;
+           
+                
+            }
+            
+            .welcome h2 {
+             
+                text-align: justify;
+            }
+            
+            
+            .nav {
+                padding-top: 5px; /* space between words and top of the website */
+        padding-bottom: 5px; /* space between words and bottom of the nav bar, and above jumbotron */
+                
+            }
+            
+            .fafa {
+             display:inline   
+            }
+            
+      
+       
+ }
+
